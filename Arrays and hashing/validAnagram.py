@@ -81,6 +81,39 @@ class Solution:
 
 # NOTES: Neet Code sol Runtime 46 ms Beats 84.55% Memory 17.7 MB Beats 27.75%
 
+
+### OLD SOLUTIONS Above###
+# class Solution:
+#     def isAnagram(self, s: str, t: str) -> bool:
+        
+#         # if len(s) != len(t):
+#         #     return False
+#         # makes the solution slower
+        
+#         # if sorted(s) != sorted(t):
+#         #     return False
+        
+#         # return True
+#         # works, 50ms time
+
+#         if len(s) != len(t):
+#             return False
+        
+#         sDict = {}
+#         tDict = {}
+
+#         for i in range(len(s)):
+#             sDict[s[i]] = 1 + sDict.get(s[i], 0)
+#             tDict[t[i]] = 1 + tDict.get(t[i], 0)
+        
+#         for c in sDict:
+#             if sDict[c] != tDict.get(c, 0):
+#                 return False
+        
+#         return True
+#         # working, 54ms
+
+
 if __name__ == "__main__":
     sol = Solution()
 
