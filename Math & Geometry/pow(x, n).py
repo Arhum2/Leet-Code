@@ -13,7 +13,7 @@ def myPow(x: float, n: int) -> float:
         #divide and conquer, keep dividing n by 2 and building up the result
         res = helper(x, n//2)
         #if n is even, return res*res
-        res = res*res
+        res = res*res 
 
         #if n is odd, return x*res*res since we miss one x in the division
         if n % 2 == 1:
