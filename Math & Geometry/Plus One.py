@@ -3,6 +3,7 @@ from typing import List
 
 
 def plusOne(digits: List[int]) -> List[int]:        
+    # Reverse the list to make it easier to add 1 to the last element
     digits = digits[::-1]
     carry, i = 1, 0
 
